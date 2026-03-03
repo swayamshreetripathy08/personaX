@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAX | Where Skincare Meets Personal Style</title>
+    <meta name="description" content="Comprehensive platform for personalized skin, hair, and outfit recommendations.">
+    <!-- Google Fonts: Outfit for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for elegant icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">PERSONA<span>X</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="glow-orb orb-1"></div>
+            <div class="glow-orb orb-2"></div>
+            <h1 class="main-title">PERSONAX</h1>
+            <h2 class="tagline">Where Skincare Meets Personal Style</h2>
+            <p class="description">Comprehensive platform for personalized skin, hair, and outfit recommendations.</p>
+            <p class="guide-paragraph">
+                "PERSONAX is an AI-powered personalization platform that analyzes your gender, body type, skin profile, hair type, fashion inspiration, and confidence level to generate tailored outfit, skincare, and haircare recommendations. It creates a structured glow-up plan designed to enhance your appearance while strengthening your self-confidence."
+            </p>
+            <a href="#glow-up-form" class="btn-primary">Start Your Glow-Up <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section pt-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Discover</span>
+                <h2>About PERSONAX</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text glass-card">
+                    <p>PERSONAX bridges the gap between inner confidence and outer radiance. By leveraging advanced AI analysis, we evaluate your unique personal attributes—from your skin profile and hair texture to your body styling and confidence levels.</p>
+                    <p>Whether you're male or female, our intelligent algorithm processes these data points to generate bespoke, comprehensive recommendations for fashion, skincare, and haircare. Our goal is to craft a holistic routine that perfectly aligns with who you are.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section pt-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="subtitle">The Process</span>
+                <h2>How It Works</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon"><i class='bx bx-user-circle'></i></div>
+                    <h3>Step 1</h3>
+                    <p>Create Your Profile</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon"><i class='bx bx-slider-alt'></i></div>
+                    <h3>Step 2</h3>
+                    <p>Enter Skin, Hair, and Style Preferences</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon"><i class='bx bx-brain'></i></div>
+                    <h3>Step 3</h3>
+                    <p>AI Analyzes Your Persona</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon"><i class='bx bx-calendar-star'></i></div>
+                    <h3>Step 4</h3>
+                    <p>Receive Personalized Glow-Up Plan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section pt-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Capabilities</span>
+                <h2>Platform Features</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <i class='bx bx-closet feature-icon'></i>
+                    <h4>Outfit Recommendations Based on Body Type</h4>
+                </div>
+                <div class="feature-card glass-card">
+                    <i class='bx bx-drop feature-icon'></i>
+                    <h4>Skincare Routine Based on Skin Type and Concerns</h4>
+                </div>
+                <div class="feature-card glass-card">
+                    <i class='bx bx-cut feature-icon'></i>
+                    <h4>Haircare Routine Based on Hair and Scalp Type</h4>
+                </div>
+                <div class="feature-card glass-card">
+                    <i class='bx bx-star feature-icon'></i>
+                    <h4>Confidence-Based Styling Suggestions</h4>
+                </div>
+                <div class="feature-card glass-card highlight">
+                    <i class='bx bx-line-chart feature-icon'></i>
+                    <h4>AI Glow Score</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multi-Step Input Form Section -->
+    <section id="glow-up-form" class="form-section pt-section">
+        <div class="container">
+            <div class="form-container glass-card">
+                <div class="form-header">
+                    <h2>Your Glow-Up Journey</h2>
+                    <div class="progress-bar">
+                        <div class="progress" id="form-progress"></div>
+                    </div>
+                </div>
+
+                <form id="persona-form">
+                    <!-- Step 1: Basics -->
+                    <div class="form-step active" data-step="1">
+                        <h3>Step 1: Basics & Body</h3>
+                        
+                        <div class="input-group">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="Female" required> Female</label>
+                                <label><input type="radio" name="gender" value="Male"> Male</label>
+                                <label><input type="radio" name="gender" value="Non-binary"> Non-binary</label>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="age">Age Group</label>
+                            <select id="age" name="age" required>
+                                <option value="" disabled selected>Select age group</option>
+                                <option value="Under 18">Under 18</option>
+                                <option value="18-24">18-24</option>
+                                <option value="25-34">25-34</option>
+                                <option value="35-44">35-44</option>
+                                <option value="45+">45+</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="bodyType">Body Type</label>
+                            <select id="bodyType" name="bodyType" required>
+                                <option value="" disabled selected>Select body type</option>
+                                <option value="Ectomorph">Slim / Ectomorph</option>
+                                <option value="Mesomorph">Athletic / Mesomorph</option>
+                                <option value="Endomorph">Curvy / Broad / Endomorph</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="height">Height</label>
+                            <input type="text" id="height" name="height" placeholder="e.g., 5'7&quot; or 170cm" required>
+                        </div>
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn-primary next-step">Next <i class='bx bx-right-arrow-alt'></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Style & Confidence -->
+                    <div class="form-step" data-step="2">
+                        <h3>Step 2: Style & Confidence</h3>
+                        
+                        <div class="input-group range-group">
+                            <label for="confidence">Current Confidence Level: <span id="confidence-val">5</span>/10</label>
+                            <input type="range" id="confidence" name="confidence" min="1" max="10" value="5">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="fashionInspiration">Fashion Inspiration</label>
+                            <select id="fashionInspiration" name="fashionInspiration" required>
+                                <option value="" disabled selected>Select a style</option>
+                                <option value="Minimalist">Minimalist / Quiet Luxury</option>
+                                <option value="Streetwear">Streetwear / Urban</option>
+                                <option value="Classic">Classic / Elegance</option>
+                                <option value="Edgy">Edgy / Alternative</option>
+                                <option value="Preppy">Preppy / Smart Casual</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="colorPreference">Color Preference</label>
+                            <input type="text" id="colorPreference" name="colorPreference" placeholder="e.g., Neutrals, Pastels, Dark tones" required>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn-secondary prev-step">Back</button>
+                            <button type="button" class="btn-primary next-step">Next <i class='bx bx-right-arrow-alt'></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Skin Profile -->
+                    <div class="form-step" data-step="3">
+                        <h3>Step 3: Skin Profile</h3>
+                        
+                        <div class="input-group">
+                            <label for="skinType">Skin Type</label>
+                            <select id="skinType" name="skinType" required>
+                                <option value="" disabled selected>Select skin type</option>
+                                <option value="Normal">Normal</option>
+                                <option value="Dry">Dry</option>
+                                <option value="Oily">Oily</option>
+                                <option value="Combination">Combination</option>
+                                <option value="Sensitive">Sensitive</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="skinTone">Skin Tone</label>
+                            <select id="skinTone" name="skinTone" required>
+                                <option value="" disabled selected>Select tone</option>
+                                <option value="Fair">Fair</option>
+                                <option value="Light">Light</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Tan">Tan</option>
+                                <option value="Deep">Deep</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="undertone">Undertone</label>
+                            <select id="undertone" name="undertone" required>
+                                <option value="" disabled selected>Select undertone</option>
+                                <option value="Warm">Warm (Yellow/Golden)</option>
+                                <option value="Cool">Cool (Pink/Blue)</option>
+                                <option value="Neutral">Neutral</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="skinConcerns">Primary Skin Concerns</label>
+                            <input type="text" id="skinConcerns" name="skinConcerns" placeholder="e.g., Acne, anti-aging, hyperpigmentation" required>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn-secondary prev-step">Back</button>
+                            <button type="button" class="btn-primary next-step">Next <i class='bx bx-right-arrow-alt'></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Hair Profile -->
+                    <div class="form-step" data-step="4">
+                        <h3>Step 4: Hair Profile</h3>
+                        
+                        <div class="input-group">
+                            <label for="hairType">Hair Type</label>
+                            <select id="hairType" name="hairType" required>
+                                <option value="" disabled selected>Select hair type</option>
+                                <option value="Straight">Straight</option>
+                                <option value="Wavy">Wavy</option>
+                                <option value="Curly">Curly</option>
+                                <option value="Coily">Coily</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="hairThickness">Hair Thickness</label>
+                            <select id="hairThickness" name="hairThickness" required>
+                                <option value="" disabled selected>Select thickness</option>
+                                <option value="Fine">Fine</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Thick">Thick</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="scalpType">Scalp Type</label>
+                            <select id="scalpType" name="scalpType" required>
+                                <option value="" disabled selected>Select scalp type</option>
+                                <option value="Normal">Normal</option>
+                                <option value="Dry">Dry</option>
+                                <option value="Oily">Oily</option>
+                                <option value="Sensitive">Sensitive</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="hairConcerns">Hair Concerns</label>
+                            <input type="text" id="hairConcerns" name="hairConcerns" placeholder="e.g., Frizz, hair loss, dandruff, damage" required>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn-secondary prev-step">Back</button>
+                            <button type="button" class="btn-primary next-step">Next <i class='bx bx-right-arrow-alt'></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Goal -->
+                    <div class="form-step" data-step="5">
+                        <h3>Step 5: Goals</h3>
+                        
+                        <div class="input-group">
+                            <label for="timeline">Glow-Up Timeline Goal</label>
+                            <select id="timeline" name="timeline" required>
+                                <option value="" disabled selected>Select timeline</option>
+                                <option value="1 Month">1 Month (Quick Boost)</option>
+                                <option value="3 Months">3 Months (Visible Transformation)</option>
+                                <option value="6 Months">6 Months (Complete Revamp)</option>
+                            </select>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn-secondary prev-step">Back</button>
+                            <button type="submit" class="btn-primary generate-btn">Generate My Persona <i class='bx bx-magic-wand'></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Dashboard Section (Hidden initially) -->
+    <section id="results-dashboard" class="dashboard-section pt-section hidden">
+        <div class="container">
+            <div class="dashboard-header">
+                <h2>Your Persona Plan</h2>
+                <div class="glow-score-card">
+                    <div class="score-circle">
+                        <span id="final-glow-score">85</span>
+                    </div>
+                    <p>AI Glow Score</p>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Outfits -->
+                <div class="result-card glass-card">
+                    <div class="result-icon"><i class='bx bx-closet'></i></div>
+                    <h3>Outfit Recommendations</h3>
+                    <div id="result-outfit" class="result-content">
+                        <!-- AI content injected here -->
+                    </div>
+                </div>
+
+                <!-- Skincare -->
+                <div class="result-card glass-card">
+                    <div class="result-icon"><i class='bx bx-drop'></i></div>
+                    <h3>Skincare Routine</h3>
+                    <div id="result-skincare" class="result-content">
+                        <!-- AI content injected here -->
+                    </div>
+                </div>
+
+                <!-- Haircare -->
+                <div class="result-card glass-card">
+                    <div class="result-icon"><i class='bx bx-cut'></i></div>
+                    <h3>Haircare Routine</h3>
+                    <div id="result-haircare" class="result-content">
+                        <!-- AI content injected here -->
+                    </div>
+                </div>
+
+                <!-- Confidence -->
+                <div class="result-card glass-card highlight-card">
+                    <div class="result-icon"><i class='bx bx-star'></i></div>
+                    <h3>Confidence Boost Tips</h3>
+                    <div id="result-confidence" class="result-content">
+                        <!-- AI content injected here -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-footer center">
+                <button class="btn-secondary" onclick="window.location.reload()">Reset Plan</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">PERSONA<span>X</span></div>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-pinterest-alt'></i></a>
+            </div>
+            <p class="ai-note"><i class='bx bx-chip'></i> Powered by AI</p>
+            <p class="copyright">&copy; 2026 PERSONAX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
